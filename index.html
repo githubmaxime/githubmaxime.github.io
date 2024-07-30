@@ -90,7 +90,16 @@
 
 	<section id="about">
 		<div class="picture left">
-			<img src="assets/images/nina.webp" width="600" height="600"alt="Photo de Nina Carducci">
+			<img src="assets/images/nina.webp"
+			srcset="assets/images/nina-300w.webp 300w,
+					assets/images/nina-600w.webp 600w,
+					assets/images/nina-900w.webp 900w"
+			sizes="(max-width: 300px) 300px,
+				   (max-width: 600px) 600px,
+				   900px"
+			width="600" height="600"
+			alt="Photo de Nina Carducci"
+			loading="lazy">
 		</div>
 		<div id="about-me">
 			<h2 class="about-me__title">A propos de moi</h2>
@@ -121,29 +130,78 @@
 					alt="Photo d'un concert prise depuis la foule avec un jeu de lumière"
 					loading="lazy">
 				<img data-gallery-tag="Entreprises" class="gallery-item"
-					src="assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
-					alt="Photo d'un homme en costume-cravate, bras croisés" loading="lazy">
+				    src="assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
+				    alt="Photo d'un homme en costume-cravate, bras croisés" loading="lazy">
 				<img data-gallery-tag="Entreprises" class="gallery-item"
-					src="assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" width="738" height="500"
-					alt="Photo d'une femme brune souriante, dans des bureaux" loading="lazy">
+				    src="assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
+				    srcset="assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-320w.webp 320w,
+						assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-640w.webp 640w,
+						assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-800w.webp 800w"
+				    sizes="(max-width: 320px) 320px,
+					   (max-width: 640px) 640px,
+					   738px"
+				    width="738" height="500"
+				    alt="Photo d'une femme brune souriante, dans des bureaux"
+				    loading="lazy">
 				<img data-gallery-tag="Mariages" class="gallery-item"
 					src="assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
 					alt="Photo en gros plan sur les mains d'un couple sur le point de se rejoindre" loading="lazy">
 				<img data-gallery-tag="Portrait" class="gallery-item"
-					src="assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" width="533" height="800"
-					alt="Photo portrait d'un homme ébloui par le soleil" loading="lazy">
+                    src="assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
+				    srcset="assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-320w.webp 320w,
+			    		assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-533w.webp 533w,
+						assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-800w.webp 800w"
+		    		sizes="(max-width: 320px) 320px,
+					   (max-width: 533px) 533px,
+					   800px"
+			    	width="533" height="800"
+		    		alt="Photo portrait d'un homme ébloui par le soleil"
+		    		loading="lazy">
 				<img data-gallery-tag="Mariages" class="gallery-item"
-					src="assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" width="466" height="700"
-					alt="Photo des mariés qui se regardent en souriant tout en se tenant la main" loading="lazy">
+				    src="assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
+				    srcset="assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-320w.webp 320w,
+						assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-466w.webp 466w,
+						assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-700w.webp 700w"
+				    sizes="(max-width: 320px) 320px,
+					   (max-width: 466px) 466px,
+					   700px"
+				    width="466" height="700"
+				    alt="Photo des mariés qui se regardent en souriant tout en se tenant la main"
+				    loading="lazy">
 				<img data-gallery-tag="Portrait" class="gallery-item"
-					src="assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" width="532" height="800"
-					alt="Photo portrait d'une femme brune avec une main dans les cheveux" loading="lazy">
+				    src="assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
+			    	srcset="assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-320w.webp 320w,
+						assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-532w.webp 532w,
+						assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-800w.webp 800w"
+			    	sizes="(max-width: 320px) 320px,
+					   (max-width: 532px) 532px,
+			 		   800px"
+			    	width="532" height="800"
+			    	alt="Photo portrait d'une femme brune avec une main dans les cheveux"
+			    	loading="lazy">
 				<img data-gallery-tag="Concert" class="gallery-item"
-					src="assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" width="749" height="500"
-					alt="Photo d'un chanteur en concert fesant un signe avec sa main et de la fumée en arrière plan" loading="lazy">
+			    	src="assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
+			    	srcset="assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-320w.webp 320w,
+						assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-500w.webp 500w,
+						assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-749w.webp 749w"
+			    	sizes="(max-width: 320px) 320px,
+					   (max-width: 500px) 500px,
+					   749px"
+			    	width="749" height="500"
+			    	alt="Photo d'un chanteur en concert fesant un signe avec sa main et de la fumée en arrière plan"
+			    	loading="lazy">
 				<img data-gallery-tag="Entreprises" class="gallery-item"
-					src="assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" width="816" height="500"
-					alt="Photo d'une femme sur son ordinateur portable, esquissant un grand sourire" loading="lazy">
+		    		src="assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
+		    		srcset="assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-320w.webp 320w,
+						assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-500w.webp 500w,
+						assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-816w.webp 816w"
+			    	sizes="(max-width: 320px) 280px,
+					   (max-width: 500px) 450px,
+					   816px"
+		    		width="816" height="500"
+		    		alt="Photo d'une femme sur son ordinateur portable, esquissant un grand sourire"
+		     		loading="lazy">
+		   
 			</div>
 		</div>
 		<div class="quote">
@@ -231,7 +289,17 @@
 				</form>
 			</div>
 			<div class="picture right">
-				<img src="assets/images/camera.webp" width="450" height="450" alt="Photo d'un appareil photo">
+				<img src="assets/images/camera.webp"
+				srcset="assets/images/camera-320w.webp 320w,
+						assets/images/camera-450w.webp 450w,
+						assets/images/camera-600w.webp 600w"
+				sizes="(max-width: 320px) 280px,
+					   (max-width: 450px) 450px,
+					   600px"
+				width="450" height="450"
+				alt="Photo d'un appareil photo"
+				loading="lazy">
+		   
 			</div>
 		</div>
 
