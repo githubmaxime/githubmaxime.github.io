@@ -108,7 +108,7 @@ footer .picture img {
 }
 
 #gallery {
-  /* min-height: 100vh; */
+  min-height: 100vh;
 }
 .title {
   text-align: center;
