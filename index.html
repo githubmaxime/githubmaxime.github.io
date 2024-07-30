@@ -8,7 +8,7 @@
 		content="Photographe professionnelle à Bordeaux, les services proposés sont : Shooting photo, Retouches, Albums photos">
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="assets/style.min.css" >
+	<link rel="preload" href="assets/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<link rel="preload" href="assets/bootstrap/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript>
 		<link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" >
@@ -16,9 +16,6 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preload" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-    <!-- Preload LCP Image -->
-    <link rel="preload" href="assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" as="image">
 
 	<!-- Open Graph data - Facebook -->
 	<meta property="og:title" content="Nina Carducci - Photographie Bordeaux" />
@@ -114,31 +111,31 @@
 			<div class="gallery" style="display: none">
 				<img data-gallery-tag="Concert" class="gallery-item"
 					src="assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
-					alt="Photo d'un concert prise depuis la foule avec un jeux de lumière. ">
+					alt="Photo d'un concert prise depuis la foule avec un jeux de lumière" loading="lazy">
 				<img data-gallery-tag="Entreprises" class="gallery-item"
 					src="assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
-					alt="Photo d'un homme en costume-cravate, bras croisés ">
+					alt="Photo d'un homme en costume-cravate, bras croisés" loading="lazy">
 				<img data-gallery-tag="Entreprises" class="gallery-item"
 					src="assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
-					alt="Photo d'une femme brune souriante, dans des bureaux">
+					alt="Photo d'une femme brune souriante, dans des bureaux" loading="lazy">
 				<img data-gallery-tag="Mariages" class="gallery-item"
 					src="assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
-					alt="Photo en gros plan sur les mains d'un couple sur le point de se rejoindre">
+					alt="Photo en gros plan sur les mains d'un couple sur le point de se rejoindre" loading="lazy">
 				<img data-gallery-tag="Portrait" class="gallery-item"
 					src="assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
-					alt="Photo portrait d'un homme ébloui par le soleil">
+					alt="Photo portrait d'un homme ébloui par le soleil" loading="lazy">
 				<img data-gallery-tag="Mariages" class="gallery-item"
 					src="assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
-					alt="Photo des mariés qui se regardent en souriant tout en se tenant la main">
+					alt="Photo des mariés qui se regardent en souriant tout en se tenant la main" loading="lazy">
 				<img data-gallery-tag="Portrait" class="gallery-item"
 					src="assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
-					alt="Photo portrait d'une femme brune avec une main dans les cheveux">
+					alt="Photo portrait d'une femme brune avec une main dans les cheveux" loading="lazy">
 				<img data-gallery-tag="Concert" class="gallery-item"
 					src="assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
-					alt="Photo d'un chanteur en concert fesant un signe avec sa main et de la fumée en arrière plan">
+					alt="Photo d'un chanteur en concert fesant un signe avec sa main et de la fumée en arrière plan" loading="lazy">
 				<img data-gallery-tag="Entreprises" class="gallery-item"
 					src="assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
-					alt="Photo d'une femme sur son ordinateur portable, esquissant un grand sourire">
+					alt="Photo d'une femme sur son ordinateur portable, esquissant un grand sourire" loading="lazy">
 			</div>
 		</div>
 		<div class="quote">
