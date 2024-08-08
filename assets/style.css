@@ -52,6 +52,36 @@ h2 {
   height: 20px;
 }
 
+/* Pour le conteneur de la carousel */
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Pour les éléments du carousel */
+.carousel-item {
+  display: none;
+  width: 100%;
+}
+
+/* Pour l'élément actif */
+.carousel-item.active {
+  display: block;
+}
+
+/* Pour les images */
+.carousel-image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  /* Si tu veux gérer des tailles spécifiques */
+  /* Exemple: */
+  width: 100%;
+  height: auto;
+}
+
 #about {
   display: flex;
   background-color: #f6d2b8;
@@ -387,5 +417,48 @@ input[type="submit"] {
   }
   .picture {
     width: 80%;
+  }
+}
+
+/* Gestion de la réactivité des images */
+@media (max-width: 320px) {
+  .carousel-image {
+      content: url('./assets/images/slider/320/ryoji-320.webp');
+  }
+}
+
+@media (max-width: 375px) {
+  .carousel-image {
+      content: url('./assets/images/slider/375/ryoji-375.webp');
+  }
+}
+
+@media (max-width: 425px) {
+  .carousel-image {
+      content: url('./assets/images/slider/425/ryoji-425.webp');
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-image {
+      content: url('./assets/images/slider/768/ryoji-768.webp');
+  }
+}
+
+@media (max-width: 1024px) {
+  .carousel-image {
+      content: url('./assets/images/slider/1024/ryoji-1024.webp');
+  }
+}
+
+@media (max-width: 1440px) {
+  .carousel-image {
+      content: url('./assets/images/slider/1440/ryoji-1440.webp');
+  }
+}
+
+@media (min-width: 1920px) {
+  .carousel-image {
+      content: url('./assets/images/slider/1920/ryoji-1920.webp');
   }
 }
