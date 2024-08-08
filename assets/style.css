@@ -73,13 +73,30 @@ h2 {
 /* Pour les images */
 .carousel-image {
   display: block;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  /* Si tu veux gérer des tailles spécifiques */
-  /* Exemple: */
-  width: 100%;
-  height: auto;
+  width: 100vw; /* Prend 100% de la largeur de la fenêtre du navigateur */
+  height: auto; /* Ajuste automatiquement la hauteur pour garder le ratio de l'image */
+  object-fit: cover; /* S'assure que l'image couvre tout l'espace sans déformer le contenu */
+}
+
+/* Si tu veux que les images prennent également toute la hauteur de la page, en fonction de la largeur */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100vh; /* Prend toute la hauteur de la fenêtre */
+}
+
+.carousel-item,
+.carousel-image {
+  height: 100vh; /* Prend toute la hauteur de la fenêtre */
+}
+
+.carousel-image {
+  object-fit: cover; /* Assure que l'image couvre tout l'espace du container */
+  width: 100vw;
 }
 
 #about {
