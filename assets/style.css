@@ -55,14 +55,16 @@ h2 {
 /* Pour le conteneur de la carousel */
 .carousel-inner {
   position: relative;
-  width: 100%;
+  width: 100%; /* Prend toute la largeur de la fenêtre */
+  height: 500px; /* Hauteur explicite de 500px */
   overflow: hidden;
 }
 
 /* Pour les éléments du carousel */
 .carousel-item {
   display: none;
-  width: 100%;
+  width: 100%; /* Prend toute la largeur du conteneur parent */
+  height: 500px; /* Hauteur explicite pour correspondre au conteneur */
 }
 
 /* Pour l'élément actif */
@@ -73,31 +75,11 @@ h2 {
 /* Pour les images */
 .carousel-image {
   display: block;
-  width: 100vw; /* Prend 100% de la largeur de la fenêtre du navigateur */
-  height: auto; /* Ajuste automatiquement la hauteur pour garder le ratio de l'image */
+  width: 100%; /* Prend toute la largeur de l'élément parent */
+  height: 100%; /* S'adapte à la hauteur de l'élément parent */
   object-fit: cover; /* S'assure que l'image couvre tout l'espace sans déformer le contenu */
 }
 
-/* Si tu veux que les images prennent également toute la hauteur de la page, en fonction de la largeur */
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-.carousel-inner {
-  height: 100vh; /* Prend toute la hauteur de la fenêtre */
-}
-
-.carousel-item,
-.carousel-image {
-  height: 100vh; /* Prend toute la hauteur de la fenêtre */
-}
-
-.carousel-image {
-  object-fit: cover; /* Assure que l'image couvre tout l'espace du container */
-  width: 100vw;
-}
 
 #about {
   display: flex;
